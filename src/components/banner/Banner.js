@@ -19,6 +19,10 @@ function Banner() {
     fetchData();
   }, []);
 
+  function truncate(str, boyut) {
+    return str?.length > boyut ? str.substr(0, boyut - 1) + "..." : str;
+  }
+
   return (
     <header
       className="banner"
@@ -36,8 +40,9 @@ function Banner() {
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        <h4 className="banner_description">{movie.overview}</h4>
+        <h4 className="banner_description">{truncate(movie.overview, 150)}</h4>
       </div>
+      <div className="banner_fadebottom"></div>
     </header>
   );
 }
