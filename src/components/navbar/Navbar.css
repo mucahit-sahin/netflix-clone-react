@@ -7,13 +7,20 @@
 .nav_black {
   background-color: black;
 }
+.col {
+  float: left;
+  margin-top: 15px;
+  margin-right: 10px;
+}
 
 .logo {
-  position: fixed;
-  left: 20px;
+  margin-left: 10px;
+  float: left;
+
   object-fit: contain;
   margin-top: 5px;
   width: 100px;
+  margin-right: 10%;
 }
 
 .profile {

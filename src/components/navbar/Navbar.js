@@ -18,10 +18,14 @@ function Navbar() {
   return (
     <div className={`nav ${showNavbar && "nav_black"}`}>
       <img
-        className="logo"
+        className="logo col"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/220px-Netflix_2015_logo.svg.png"
         alt="logo"
       />
+      <div className="col" click="#movie">
+        Tv Shows
+      </div>
+      <div className="col">Movies </div>
       <img
         className="profile"
         src="https://ih1.redbubble.net/image.618427315.3222/flat,128x128,075,t.u3.jpg"

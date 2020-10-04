@@ -23,7 +23,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   function openModal(movie) {
-    movieTrailer(movie.original_title || "").then((url) => {
+    movieTrailer(movie.original_name || movie.original_title).then((url) => {
       const urlParams = new URLSearchParams(new URL(url).search);
       setTrailerUrl(urlParams.get("v"));
     });
@@ -42,7 +42,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             src={`${img_base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
-            alt={movie.original_title}
+            alt={movie.original_title || movie.name}
           ></img>
         ))}
         <ModalVideo
