@@ -1,6 +1,6 @@
 # netflix-clone-react
 
-Netflix ana sayfasını TMDB api servisinden bilgileri çekerek React ile gerçekleştirmeye çalıştım.
+Netflix ana sayfasını TMDB api servisinden bilgileri çekerek listelediğim ve seçilen dizi yada filmin fragmanını açan web siteyi React ile gerçekleştirdim.
 
 ## Kullanılan Kütüphaneler
 - React
